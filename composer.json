@@ -1,0 +1,13 @@
+{
+    "name": "lucas-silveira/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Silveira",
+            "email": "lugano1995@gmail.com"
+        }
+    ],
+    "require": {}
+}
