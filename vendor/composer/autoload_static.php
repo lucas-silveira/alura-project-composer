@@ -23,6 +23,7 @@ class ComposerStaticInit00f827dc86df5a3c5c370bd2e0fe6ff4
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\DomCrawler\\' => 29,
+            'Symfony\\Component\\CssSelector\\' => 30,
         ),
         'P' => 
         array (
@@ -53,6 +54,10 @@ class ComposerStaticInit00f827dc86df5a3c5c370bd2e0fe6ff4
         'Symfony\\Component\\DomCrawler\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
         'Psr\\Http\\Message\\' => 
         array (

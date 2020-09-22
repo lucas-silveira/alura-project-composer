@@ -1,8 +1,16 @@
 <?php
 
-use \GuzzleHttp\Client;
+require 'vendor/autoload.php';
+require 'src/CoursesSearchEngine.php';
 
-$client = new Client();
-$response = $client->request('GET', 'https://cursos.alura.com.br/category/infraestrutura/cloud-computing');
+use GuzzleHttp\Client;
+use Symfony\Component\DomCrawler\Crawler;
+use Alura\CoursesSearchEngine\CoursesSearch;
 
-$html = $response->getBody();
+$client = new Client(['base_uri' => 'https://www.alura.com.br/']);
+$crawler = new Crawler();
+
+$coursesSearch = new CoursesSearch($client, $crawler);
+$courses = $coursesSearch->search('cursos-online-infraestrutura/cloud-computing');
+
+print_r($courses);
