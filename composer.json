@@ -9,5 +9,7 @@
             "email": "lugano1995@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
 }
