@@ -13,5 +13,11 @@
         "guzzlehttp/guzzle": "^7.0",
         "symfony/dom-crawler": "^5.1",
         "symfony/css-selector": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alura\\CoursesSearchEngine\\": "src/"
+        },
+        "files": ["./src/showMessage.php"]
     }
 }
